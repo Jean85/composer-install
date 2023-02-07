@@ -180,7 +180,7 @@ Sometimes it's needed to use the `repositories` key in your `composer.json` to p
 env:
    COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.COMPOSER_AUTH }}"}}'
 ```
-In this example, `COMPOSER_AUTH` is the name of the secret that you'll need to create. To access public repositores, the `public_repo` scope is sufficient, while for private repositories (that you can access), `read:project` will be needed. 
+In this example, `COMPOSER_AUTH` is the name of the secret that you'll need to create. To access public repositories, the `public_repo` scope is sufficient, while for private repositories (that you can access), `read:project` will be needed. 
 
 For more information on how to do that on your repository, see [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and [Creating encrypted secrets for a repository](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) on GitHub documentation.
 
